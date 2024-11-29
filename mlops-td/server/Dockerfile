@@ -1,16 +1,11 @@
-FROM python:3.9-slim
+FROM python:3.11-slim
 
-# Set working directory
+COPY requirements.txt /app/requirements.txt
 WORKDIR /app
-
-# Copy the application code and model
-COPY app.py app.py
-
-# Install dependencies
 RUN pip install -r requirements.txt
 
-# Expose the port the app runs on
-EXPOSE 8000
+COPY app.py app.py
+COPY model.pkl model.pkl
 
 # Command to run the application
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]

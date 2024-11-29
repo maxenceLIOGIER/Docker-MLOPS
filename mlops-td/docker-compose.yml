@@ -5,7 +5,7 @@ services:
       context: ./server
       dockerfile: Dockerfile
     ports:
-      - "8000:8000"
+      - 8000:8000
 
   client:
     build:
@@ -13,3 +13,5 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - server
+    ports:
+      - 8501:8501
