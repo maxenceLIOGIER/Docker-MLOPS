@@ -1,6 +1,6 @@
 # Projet Docker avec Docker Compose
 
-Ce projet créé pour le cours de MLOPS dans le cadre du Master 2 SISE utilise Docker pour déployer facilement une application streamlit. \
+Ce projet créé pour le cours de MLOPS dans le cadre du Master 2 SISE utilise Docker pour déployer facilement une application streamlit.
 Suivez les étapes ci-dessous pour cloner le dépôt, configurer votre environnement et exécuter l'application sur votre machine locale.
 
 ---
