@@ -25,7 +25,6 @@ git clone https://github.com/username/repository-name.git
 ```
 (Remplacez username par le nom d'utilisateur GitHub et repository-name par le nom de ce dépôt).
 
----
 
 ### 2) Accéder au répertoire
 Placez-vous dans le dossier du projet cloné :
@@ -33,12 +32,10 @@ Placez-vous dans le dossier du projet cloné :
 cd repository-name
 ```
 
----
 
 ### 3) Vérifier les fichiers nécessaires
 Assurez-vous que le fichier ```docker-compose.yml``` est présent dans le répertoire. Ce fichier définit les services et leur configuration.
 
----
 
 ### 4) Lancer l'application
 Exécutez la commande suivante pour démarrer tous les conteneurs et services :
@@ -48,7 +45,6 @@ docker-compose up
 ```
 Cette commande télécharge les images nécessaires (si elles ne sont pas déjà présentes sur votre machine), crée et démarre les conteneurs.
 
----
 
 ### 5) Accéder à l'application
 Une fois les services démarrés, accédez à l'application via votre navigateur web à l'adresse suivante :
