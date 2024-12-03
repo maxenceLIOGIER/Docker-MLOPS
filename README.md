@@ -72,4 +72,21 @@ Si vous modifiez les fichiers du projet, relancez les conteneurs en les recréan
 docker-compose up --build
 ```
 
+---
+
+## Fonctionnement de l'application
+L'application est très simple. Elle a pour but de créer une prédiction du type d'iris (la fleur) entre setosa, virginica et versicolor. Ceci se base sur le jeu de données très connu "Iris".
+
+Pour faire une prédiction, l'utilisateur peut rentrer les caractéristiques suivantes : longueur du sépale, largeur du sépale, longueur du pétale et largeur du pétale.
+
+En sortie, l'application renvoie le nom du type d'iris auquelles les caractéristiques fournies correspondent le plus ainsi qu'une photo de ce type de fleur.
+
+![image](https://github.com/user-attachments/assets/48ca7271-2642-4064-aeec-e86816392619)
+
+
+Le modèle utilisé est celui de la forêt aléatoire de scikit-learn :
+```python
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+```
+
 
