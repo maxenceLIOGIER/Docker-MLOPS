@@ -43,7 +43,7 @@ Exécutez la commande suivante pour démarrer tous les conteneurs et services :
 ```bash
 docker-compose up
 ```
-Cette commande télécharge les images nécessaires (si elles ne sont pas déjà présentes sur votre machine), crée et démarre les conteneurs.
+Cette commande télécharge les images nécessaires (si elles ne sont pas déjà présentes sur votre machine), crée et démarre les conteneurs. Lorsque vous exécutez cette commande, assurez vous que Docker Desktop soit ouvert sur votre PC.
 
 
 ### 5) Accéder à l'application
